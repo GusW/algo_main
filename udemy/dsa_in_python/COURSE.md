@@ -126,3 +126,114 @@ def dutch_national_flag(nums: list[int], pivot: num = 1) -> list[int]:
         return trapped
 
     ```
+
+### Linked Lists
+
+![Linked Lists](./images/linked_list_01.png)
+![Linked Lists](./images/linked_list_02.png)
+![Linked Lists](./images/linked_list_03.png)
+
+#### Linked Lists Operations
+
+![Linked List Operations](./images/linked_list_ops_01.png)
+![Linked List Operations](./images/linked_list_ops_02.png)
+![Linked List Operations](./images/linked_list_ops_03.png)
+![Linked List Operations](./images/linked_list_ops_04.png)
+![Linked List Operations](./images/linked_list_ops_05.png)
+![Linked List Operations](./images/linked_list_ops_06.png)
+![Linked List Operations](./images/linked_list_ops_07.png)
+
+#### Comparing Arrays and Linked Lists
+
+![Linked List vs. Array](./images/array_vs_linked_list_02.png)
+![Linked List vs. Array](./images/array_vs_linked_list_01.png)
+![Linked List vs. Array](./images/array_vs_linked_list_03.png)
+![Linked List vs. Array](./images/array_vs_linked_list_04.png)
+![Linked List vs. Array](./images/array_vs_linked_list_05.png)
+![Linked List vs. Array](./images/array_vs_linked_list_06.png)
+
+#### Linked List Applications
+
+![Linked List Application](./images/linked_list_app_01.png)
+![Linked List Application](./images/linked_list_app_02.png)
+![Linked List Application](./images/linked_list_app_03.png)
+![Linked List Application](./images/linked_list_app_04.png)
+
+#### Doulby Linked List
+
+![Doubly Linked List](./images/doubly_linked_list_01.png)
+![Doubly Linked List](./images/doubly_linked_list_02.png)
+![Doubly Linked List](./images/doubly_linked_list_03.png)
+![Doubly Linked List](./images/doubly_linked_list_04.png)
+
+#### Challenges
+
+- Middle of Singly Linked Lists
+
+```python
+def mid_singly_linked_list(linked_list):
+
+  slow, fast = linked_list.head, linked_list.head
+
+  while fast.next and fast.next.next:
+    slow = slow.next
+    fast = fast.next.next
+
+  return slow
+```
+
+- Reverse Linked List in place
+
+```python
+def reverse(linked_list):
+
+  prev = None
+  curr = linked_list.head
+
+  while curr:
+    next_ = curr.next
+    curr.next = prev
+    prev = curr
+    curr = next_
+
+  linked_list.head = prev
+  return linked_list
+```
+
+### Stacks
+
+![Stack](./images/stack_01.png)
+![Stack](./images/stack_02.png)
+![Stack](./images/stack_03.png)
+
+#### Stacks in Memory Management
+
+![Stack RAM](./images/stack_ram_01.png)
+![Stack RAM](./images/stack_ram_02.png)
+![Stack RAM](./images/stack_ram_03.png)
+
+#### Stack Memory Visuallization
+
+![Stack Memory Visualization](./images/mem_management_01.png)
+![Stack Memory Visualization](./images/mem_management_02.png)
+![Stack Memory Visualization](./images/mem_management_03.png)
+![Stack Memory Visualization](./images/mem_management_04.png)
+![Stack Memory Visualization](./images/mem_management_05.png)
+![Stack Memory Visualization](./images/mem_management_06.png)
+![Stack Memory Visualization](./images/mem_management_07.png)
+![Stack Memory Visualization](./images/mem_management_08.png)
+![Stack Memory Visualization](./images/mem_management_09.png)
+![Stack Memory Visualization](./images/mem_management_10.png)
+![Stack Memory Visualization](./images/mem_management_11.png)
+![Stack Memory Visualization](./images/mem_management_12.png)
+![Stack Memory Visualization](./images/mem_management_13.png)
+![Stack Memory Visualization](./images/mem_management_14.png)
+
+#### Stack Applications
+
+![Stack Application](./images/stack_applications_01.png)
+
+### Queue
+
+![Queue](./images/queue_01.png)
+![Queue](./images/queue_02.png)
